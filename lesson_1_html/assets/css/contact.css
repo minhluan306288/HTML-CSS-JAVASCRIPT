@@ -1,3 +1,45 @@
-body{
-    font-family: 'Playfair Display', serif;
+
+.form-contact .col-2 .form-control{
+    flex: 1;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+
+    background-color: white;
+    border-radius: calc(var(--border-radius-base) + 5px);
+}
+
+.form .form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.form .form-control input, .form .form-control textarea {
+    background-color: var(--bg);
+    color: var(--text);
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 15px;
+    line-height: 1.8em;
+    font-family: 'Poppins', cursive;
+}
+
+.form .form-control input::placeholder, .form .form-control textarea::placeholder {
+    color: var(--text-disabled);
+    font-weight: 300;
+}
+
+.form .form-control input:focus, .form .form-control textarea:focus{
+    outline-color: var(--info);
+    outline-width: 1px;
+    outline-style: inset;
 }
