@@ -1,0 +1,59 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --text: rgb(69, 69, 69);
+    --text-disabled: rgb(202, 202, 202);
+    --heading: #2D1863;
+    --symbol: #FFD43A;
+    --bg: #eaf5ff;
+    --primary: #6F34FE ;
+    --second: #FFD43A;
+    --success: #3da119;
+    --info: #0c92ff;
+    --warning: #fe9e0f;
+    --danger: #c71f1f;
+
+    --border-radius-base: 8px;
+}
+
+body{
+    font-family: 'Poppins', cursive;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+.container-fix{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.title-page{
+    line-height: 35px;
+    padding-left: 15px;
+    border-left: 3px solid var(--symbol);
+    font-size: 20px;
+}
+
+.title-section{
+    line-height: 1.2;
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--heading);
+    font-family: 'Abril Fatface', cursive;
+}
+
+.section-container{
+    display: flex;
+    align-items: center;
+}
+
+.section-container .section__col2{
+    flex: 1;
+}
+
+.form-contact .col-2{
+    display: flex;
+    gap: 10px;
+}
