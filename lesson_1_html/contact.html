@@ -33,34 +33,33 @@
                 </div>
             </div>
             <div class="section__col2 form">
-                <form action="" class="form-contact">
+                <form id="contact" action="" class="form-contact">
                     <div class="col-2">
                         <div class="form-control">
                             <label for="fname">First name:</label>
-                            <input type="text" placeholder="First name..." id="fname" name="fname">
+                            <input required type="text" placeholder="First name..." id="fname" name="fname">
                         </div>
                         <div class="form-control">
                             <label for="lname">Last name:</label>
-                            <input type="text" placeholder="Last name..." name="lname">
+                            <input required type="text" placeholder="Last name..." name="lname">
                         </div>
                     </div>
                     <div class="form-control">
                         <label for="emailname">Email:
                             <span>*</span>
                         </label>
-                        <input type="email" placeholder="email..." name="emailname">
-                        <i class="valid-alert">note!</i>
+                        <input required type="email" placeholder="email..." name="emailname">
                     </div>
                     <div class="form-control">
                         <label for="subname">Subject:</label>
-                        <input type="text" placeholder="subject..." name="subname">
+                        <input required type="text" placeholder="subject..." name="subname">
                     </div>
                     <div class="form-control">
                         <label for="subname">Your Message:</label>
                         <textarea name="subname" placeholder="Your Message..."></textarea>
                     </div>
                     <div class="action">
-                        <button>Submit</button>
+                        <button type="submit" class="btn">Submit</button>
                     </div>
                 </form>
             </div>
@@ -69,22 +68,23 @@
 
     <div id="popup-get-email-x2398" class="popup">
         <div class="popup__content">
-            <span class="close-popup" title="Close">x</span>
+            <span class="close-popup" title="Close" onclick="handleClosePopup()">x</span>
             <img src="./assets/images/cover-popup-get-email.svg" alt="" class="thumb">
             <h3 class="title">Nhận Báo Giá</h3>
             <p>Để email của bạn, chúng tôi sẽ liên hệ và báo giá dịch vụ cho quý khách hàng.</p>
-            <div class="form">
+            <form id="get-email" class="form">
                 <div class="input-control">
                     <span class="prefix"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                    <input name="email" type="email" placeholder="Email..."/>
+                    <input required  name="email2" name="emailget" type="email" placeholder="Email..." />
                 </div>
                 
-                <button class="btn btn-solid m-auto">
+                <button type="submit" class="btn btn-solid m-auto">
                     Gửi
                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                 </button>
-            </div>
+            </form>
         </div>
     </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
