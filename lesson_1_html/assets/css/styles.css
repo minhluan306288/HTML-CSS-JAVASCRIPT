@@ -14,13 +14,13 @@
     --info: #0c92ff;
     --warning: #fe9e0f;
     --danger: #c71f1f;
-
     --border-radius-base: 8px;
 }
 
 body{
     font-family: 'Poppins', cursive;
     color: var(--text);
+    color: green;
     background-color: var(--bg);
     position: relative;
     margin: 0;

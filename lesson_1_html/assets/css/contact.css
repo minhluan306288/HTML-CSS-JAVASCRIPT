@@ -19,7 +19,13 @@
     gap: 5px;
     margin-bottom: 10px;
 }
-
+.form .form-control label > span{
+    color: red;
+}
+.form .form-control .valid-alert{
+    color: red;
+    font-size: 12px;
+}
 .form .form-control input, .form .form-control textarea {
     background-color: var(--bg);
     color: var(--text);
@@ -43,3 +49,20 @@
     outline-width: 1px;
     outline-style: inset;
 }
+
+.socials .icon{
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.socials .icon:first-child{
+    margin-left: 0;
+}
+
