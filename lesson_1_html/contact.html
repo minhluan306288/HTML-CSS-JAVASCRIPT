@@ -45,8 +45,11 @@
                         </div>
                     </div>
                     <div class="form-control">
-                        <label for="emailname">Email:</label>
+                        <label for="emailname">Email:
+                            <span>*</span>
+                        </label>
                         <input type="email" placeholder="email..." name="emailname">
+                        <i class="valid-alert">note!</i>
                     </div>
                     <div class="form-control">
                         <label for="subname">Subject:</label>
@@ -55,6 +58,9 @@
                     <div class="form-control">
                         <label for="subname">Your Message:</label>
                         <textarea name="subname" placeholder="Your Message..."></textarea>
+                    </div>
+                    <div class="action">
+                        <button>Submit</button>
                     </div>
                 </form>
             </div>
