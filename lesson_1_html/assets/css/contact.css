@@ -1,4 +1,14 @@
 
+.section-container .section__col2{
+    flex: 1;
+}
+
+.form-contact .col-2{
+    display: flex;
+    gap: 10px;
+}
+
+
 .form-contact .col-2 .form-control{
     flex: 1;
 }
@@ -65,4 +75,3 @@
 .socials .icon:first-child{
     margin-left: 0;
 }
-
