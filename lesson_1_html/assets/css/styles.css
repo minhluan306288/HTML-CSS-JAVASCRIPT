@@ -31,6 +31,8 @@ body{
     margin: 0 auto;
 }
 
+/* CSS Page and Section */
+
 .title-page{
     line-height: 35px;
     padding-left: 15px;
@@ -51,16 +53,8 @@ body{
     align-items: center;
 }
 
-.section-container .section__col2{
-    flex: 1;
-}
 
-.form-contact .col-2{
-    display: flex;
-    gap: 10px;
-}
-
-
+/* CSS Button */
 .btn{
     line-height: 20px;
     padding: 12px 20px;
@@ -74,16 +68,31 @@ body{
     max-width: max-content;
     cursor: pointer;
 }
-
-.m-auto{
-    margin: auto;
-}
-
 .btn:hover{
     background-color: var(--second);
     color: var(--primary);
 }
 
+.m-auto{
+    margin: auto;
+}
+
+
+
+
+
+/* CSS Popup Promotion */
+
+#popup-get-email-x2398{
+    display: none;
+}
+
+.popup.actived{
+    animation: appea 300ms ease-out;
+}
+.popup.unactived{
+    animation: hidden 300ms ease-out;
+}
 
 .popup{
     position: absolute;
@@ -181,4 +190,31 @@ body{
 }
 .popup .close-popup:hover{
     background-color: var(--heading);
+}
+
+
+
+
+/* Animation CSS */
+
+@keyframes appea{
+    from{
+        opacity: 0;
+        filter: blur(15px);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0)
+    }
+}
+
+@keyframes hidden{
+    to{
+        opacity: o;
+        filter: blur(15px);
+    }
+    from{
+        opacity: 1;
+        filter: blur(0)
+    }
 }
